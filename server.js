@@ -1,18 +1,33 @@
-const os = require('os');
+const http = require('http');
+const url = require('url');
+const fs = require('fs');
+const express = require('express');
 const path = require('path');
-const math = require('./math');
 
-/* console.log(os.type());
-console.log(os.version());
-console.log(os.homedir());
 
-console.log(__dirname);
-console.log(__filename);
+//Functions
+function getDirFileNames(dirPath){
+    dirPath = path.join(__dirname, dirPath);
+    var fileArray = [];
 
-console.log(path.dirname(__filename));
-console.log(path.basename(__filename));
-console.log(path.extname(__filename));
+    fs.readdir(dirPath, function (err, files) {
+        //handling error
+        if (err) {
+            return console.log('Unable to scan directory: ' + err);
+        }
+        //listing all files using forEach
+        files.forEach(function (file) {
+            // Do whatever you want to do with the file
+                fileArray.push(file);
+        });
+        console.log(fileArray);
+        return fileArray;
+    });
+    
+}
 
-console.log(path.parse(__filename)); */
+console.log(getDirFileNames('Personal'));
 
-console.log(math.add(2,3));
+//------------------------------------
+
+
