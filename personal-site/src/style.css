@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p{
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    color: #505050;
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    color: #2d81ca;
+    font-size: 2.5rem;
+}
+
+h2{
+    color: black;
+    font-size: 1.5rem;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: black;
+}

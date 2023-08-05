@@ -1,9 +1,9 @@
 <template>
   <header class="sticky top-0 bg-white">
-    <nav>
-      <ul class="flex align-middle justify-around p-5" :class="{'bg-blue-500': scrolledDown}">
-        <li v-for="(item, index) in navLinks" :key="index"><router-link to="/">{{ item.name }}</router-link></li>
-      </ul>
+    <nav :class="{ 'shadow-xl': scrolledDown, 'shadow-none': !scrolledDown }" class="transition duration-500">
+        <ul class="flex align-middle justify-around p-5">
+          <li v-for="(item, index) in navLinks" :key="index"><router-link active-class="text-blue" to="/">{{ item.name }}</router-link></li>
+        </ul>
     </nav>
   </header>
 </template>
