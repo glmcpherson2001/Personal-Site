@@ -27,3 +27,20 @@ h3{
     font-style: italic;
     color: black;
 }
+
+nav ul li a{
+    color: #2d81ca;
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+button{
+  color: white;
+  background-color: #2079c7;
+  border: none;
+  border-radius: 0.75rem;
+  height: 4rem;  
+  margin: 1rem;
+  padding: 0 1rem;
+}

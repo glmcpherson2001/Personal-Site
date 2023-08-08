@@ -1,10 +1,14 @@
 <template>
-  <navbar></navbar>
-  <router-view></router-view>
+  <div class="min-h-screen">
+    <navbar></navbar>
+    <router-view></router-view>
+    <customfooter></customfooter>
+  </div>
 </template>
 
 <script setup>
 import navbar from './components/navbar.vue'
+import customfooter from './components/footer.vue'
 </script>
 
 <style scoped>
